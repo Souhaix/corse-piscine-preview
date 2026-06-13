@@ -4474,9 +4474,11 @@ figcaption {
   .header-actions .header-phone span {
     width: 32px;
     height: 32px;
+    flex: 0 0 32px;
     color: var(--navy);
     background: rgba(112, 236, 242, 0.24);
     border-color: rgba(0, 168, 200, 0.28);
+    border-radius: 50%;
     box-shadow:
       inset 0 1px 0 rgba(255, 255, 255, 0.72),
       0 6px 16px rgba(0, 12, 20, 0.08);
