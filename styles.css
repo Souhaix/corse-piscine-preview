@@ -219,11 +219,15 @@ select {
   transition: color 0.24s ease, background 0.24s ease, transform 0.24s ease;
 }
 
-.header-phone svg {
-  width: 14px;
-  height: 14px;
-  fill: currentColor;
-}
+  .header-phone svg {
+    width: 14px;
+    height: 14px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.1;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
 
 .header-phone:hover {
   color: var(--ink);
@@ -4491,8 +4495,8 @@ figcaption {
 
   .header-actions .header-phone svg {
     display: block;
-    width: 17px;
-    height: 17px;
+    width: 18px;
+    height: 18px;
   }
 
   .header-actions .header-phone:hover {
