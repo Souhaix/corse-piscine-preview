@@ -4493,6 +4493,7 @@ figcaption {
     display: block;
     width: 17px;
     height: 17px;
+    transform: translate(-0.5px, 1px);
   }
 
   .header-actions .header-phone:hover {
