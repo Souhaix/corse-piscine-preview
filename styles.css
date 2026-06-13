@@ -4477,6 +4477,8 @@ figcaption {
   }
 
   .header-actions .header-phone span {
+    display: grid;
+    place-items: center;
     width: 100%;
     height: 100%;
     flex: 0 0 100%;
@@ -4488,8 +4490,9 @@ figcaption {
   }
 
   .header-actions .header-phone svg {
-    width: 15px;
-    height: 15px;
+    display: block;
+    width: 17px;
+    height: 17px;
   }
 
   .header-actions .header-phone:hover {
