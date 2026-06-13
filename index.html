@@ -1,0 +1,1115 @@
+﻿<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Corse Piscine Polyester | Design Lab V2</title>
+  <meta name="description" content="Prototype créatif premium pour Corse Piscine Polyester.">
+  <link rel="preload" as="image" href="assets/hero.webp">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" data-header>
+    <a class="brand" href="#hero" aria-label="Corse Piscine Polyester">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" focusable="false">
+          <path class="brand-wave-fill" d="M12 38c8.2-8.4 17.4-8.4 27.6 0 4.1 3.4 8.4 4.2 12.4 2.4v8.9H12V38Z"/>
+          <path class="brand-wave-line" d="M10 33.6c7-7.7 15.6-7.7 25.8 0 7.1 5.3 13.1 5.1 18.2-.5"/>
+          <path class="brand-wave-line brand-wave-line-soft" d="M11 25.8c6.2-5.9 13.9-5.9 23.1 0 5.7 3.6 11 3.7 15.9.2"/>
+        </svg>
+      </span>
+      <span class="brand-copy">
+        <strong>Corse Piscine</strong>
+        <small>POLYESTER</small>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Navigation prototype">
+      <a href="#formulaire">Étude terrain</a>
+      <a href="#formats">Formats</a>
+      <a href="#budget">Prix</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#avis">Avis</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="header-actions">
+      <a class="header-phone" href="tel:+33757094189" data-track="header_phone_click">
+        <span aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false">
+            <path d="M6.6 4.8 9 4.1c.7-.2 1.4.1 1.7.8l1 2.2c.3.6.1 1.3-.4 1.7l-1.1.9c.8 1.7 2.2 3.1 4 4l.9-1.1c.4-.5 1.1-.7 1.7-.4l2.2 1c.7.3 1 1 .8 1.7l-.7 2.4c-.2.7-.8 1.1-1.5 1.1C10.8 18.4 5.6 13.2 5.6 6.4c0-.7.4-1.3 1-1.6Z"/>
+          </svg>
+        </span>
+        07 57 09 41 89
+      </a>
+      <a class="btn btn-ivory" href="#formulaire" data-track="header_cta_click">Demander une étude</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="cinema" aria-hidden="true">
+        <img src="assets/hero.webp" alt="" data-parallax>
+        <div class="cinema-gradient"></div>
+        <div class="water-sheen"></div>
+      </div>
+
+      <div class="hero-layout">
+        <div class="hero-copy">
+          <div class="overline">
+            <span></span>
+            Piscine coque polyester en Corse
+          </div>
+          <h1>
+            Votre piscine en Corse, pensée pour votre maison.
+            <em>Cadrée pour votre terrain et votre budget.</em>
+          </h1>
+          <p class="lead">Une piscine pour vivre dehors, recevoir, louer mieux ou simplement profiter de l’été chez vous. CPP vérifie ensuite l’accès, la commune et les conditions du projet pour avancer sans mauvaises surprises.</p>
+
+          <p class="hero-price-note">
+            <span class="hero-price-label">Repère prix</span>
+            <strong>Mini piscine 10m² à partir de 7&nbsp;750&nbsp;€ TTC</strong>
+            <span>hors terrassement, accessoires, options et promotion.</span>
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-water" href="#formulaire" data-track="hero_form_start">Voir si mon projet est possible</a>
+            <a class="btn btn-glass" href="tel:+33757094189" data-track="hero_phone_click">Appeler le 07 57 09 41 89</a>
+          </div>
+
+          <div class="proof-rail" id="proof" aria-label="Repères de confiance">
+            <article>
+              <strong>25 ans</strong>
+              <span>d’expérience piscine coque en Corse</span>
+            </article>
+            <article>
+              <strong>4 points</strong>
+              <span>de contact et déplacement sur toute l’île</span>
+            </article>
+            <article>
+              <strong>SAV 48h</strong>
+              <span>sous 48h ouvrables, selon diagnostic et conditions d’accès</span>
+            </article>
+          </div>
+        </div>
+
+        <aside class="diagnostic-card" id="formulaire" aria-labelledby="form-title">
+          <div class="card-orbit" aria-hidden="true"></div>
+          <div class="card-topline">
+            <span>Étude terrain offerte</span>
+            <span>Sans engagement</span>
+          </div>
+          <h2 id="form-title"><span>Recevoir mon estimation</span><span>personnalisée</span></h2>
+          <p>Quelques questions suffisent. Un conseiller CPP vous rappelle pour confirmer le format, le budget et la prochaine étape.</p>
+
+          <form class="lead-form lead-form-ghl" id="leadForm" action="thank-you.html" method="get" novalidate data-track-submit="hero_submit">
+            <fieldset class="segmented" data-track="hero_format_select">
+              <legend>Projet situé en Corse ?</legend>
+              <label><input type="radio" name="project_in_corsica" value="oui" required> Oui</label>
+              <label><input type="radio" name="project_in_corsica" value="non"> Non</label>
+              <label><input type="radio" name="project_in_corsica" value="a-confirmer"> À confirmer</label>
+            </fieldset>
+
+            <label for="commune">Commune ou code postal</label>
+            <input id="commune" name="commune" type="text" placeholder="Ajaccio, Borgo, 20240..." autocomplete="address-level2" required>
+
+            <div class="form-pair">
+              <div>
+                <label for="format">Format envisagé</label>
+                <select id="format" name="format" required data-track="hero_format_select">
+                  <option value="">Choisir</option>
+                  <option value="10m2">10m²</option>
+                  <option value="6x3">6x3</option>
+                  <option value="7x3">7x3</option>
+                  <option value="autre">Autre</option>
+                  <option value="indecis">Je ne sais pas encore</option>
+                </select>
+              </div>
+              <div>
+                <label for="timeline">Délai</label>
+                <select id="timeline" name="timeline" required>
+                  <option value="">Choisir</option>
+                  <option value="asap">Dès que possible</option>
+                  <option value="1-3">1 à 3 mois</option>
+                  <option value="3-6">3 à 6 mois</option>
+                  <option value="later">Plus tard</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-pair">
+              <div>
+                <label for="property_type">Type de propriété</label>
+                <select id="property_type" name="property_type" required>
+                  <option value="">Choisir</option>
+                  <option value="residence-principale">Résidence principale</option>
+                  <option value="residence-secondaire">Résidence secondaire</option>
+                  <option value="gite-location">Gîte ou location saisonnière</option>
+                  <option value="construction-neuve">Construction neuve</option>
+                  <option value="autre">Autre</option>
+                </select>
+              </div>
+              <div>
+                <label for="terrain_access">Terrain et accès</label>
+                <select id="terrain_access" name="terrain_access" required>
+                  <option value="">Choisir</option>
+                  <option value="facile">Accès facile</option>
+                  <option value="a-verifier">Accès à vérifier</option>
+                  <option value="pente">Terrain en pente</option>
+                  <option value="construction">Construction en cours</option>
+                  <option value="inconnu">Je ne sais pas</option>
+                </select>
+              </div>
+            </div>
+
+            <label for="name">Prénom et nom</label>
+            <input id="name" name="name" type="text" placeholder="Votre nom" autocomplete="name" required>
+
+            <div class="form-pair">
+              <div>
+                <label for="phone">Téléphone</label>
+                <input id="phone" name="phone" type="tel" placeholder="06..." autocomplete="tel" required>
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="vous@email.fr" autocomplete="email">
+              </div>
+            </div>
+
+            <input type="hidden" name="gclid" data-hidden-field="gclid">
+            <input type="hidden" name="utm_source" data-hidden-field="utm_source">
+            <input type="hidden" name="utm_medium" data-hidden-field="utm_medium">
+            <input type="hidden" name="utm_campaign" data-hidden-field="utm_campaign">
+            <input type="hidden" name="utm_term" data-hidden-field="utm_term">
+            <input type="hidden" name="utm_content" data-hidden-field="utm_content">
+            <input type="hidden" name="landing_page" data-hidden-field="landing_page">
+            <input type="hidden" name="hero_variant" value="v2_design_lab">
+            <input type="hidden" name="form_variant" value="ghl_one_step_compact">
+            <input type="hidden" name="device" data-hidden-field="device">
+            <input type="hidden" name="referrer" data-hidden-field="referrer">
+
+            <label class="consent">
+              <input type="checkbox" required>
+              <span>J’accepte d’être contacté par Corse Piscine Polyester au sujet de mon projet piscine.</span>
+            </label>
+
+            <p class="form-error" id="formError" role="alert" hidden>Merci de compléter les champs obligatoires. Vous pouvez aussi appeler le 07 57 09 41 89.</p>
+            <button class="btn btn-water btn-wide" type="submit" data-track="hero_submit">Recevoir mon estimation</button>
+          </form>
+        </aside>
+      </div>
+
+      <div class="visual-strip" aria-label="Preuves visuelles">
+        <figure>
+          <img src="assets/hero-villa.webp" alt="Piscine et villa en Corse">
+          <figcaption>Maison principale</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/hero-stone.webp" alt="Piscine près d'une maison en pierre en Corse">
+          <figcaption>Résidence secondaire</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/team-facade.webp" alt="Équipe Corse Piscine Polyester devant un point de contact en Corse">
+          <figcaption>Équipe locale en Corse</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="terrain-section" id="terrain" aria-labelledby="terrain-title" data-hide-sticky>
+      <div class="terrain-media" data-reveal>
+        <div class="terrain-visual">
+          <img src="assets/terrain.webp" alt="Piscine coque dans un jardin corse avec terrasse, murs en pierre et végétation méditerranéenne">
+          <div class="terrain-glow" aria-hidden="true"></div>
+          <div class="terrain-note terrain-note-access">
+            <span>01</span>
+            Accès chantier
+          </div>
+          <div class="terrain-note terrain-note-slope">
+            <span>02</span>
+            Implantation
+          </div>
+          <div class="terrain-note terrain-note-admin">
+            <span>03</span>
+            Règles locales
+          </div>
+        </div>
+      </div>
+
+      <div class="terrain-copy" data-reveal>
+        <div class="section-kicker">
+          <span></span>
+          LE VRAI DÉPART DU PROJET
+        </div>
+        <h2 id="terrain-title">Le bon projet doit donner envie, puis rester clair.</h2>
+        <p>Le modèle compte, mais le résultat se joue aussi dans l’intégration : soleil, vue, circulation autour du bassin, accès, démarches et budget. CPP vérifie ces points chez vous avant de vous orienter vers un devis sérieux.</p>
+      </div>
+
+      <div class="terrain-diagnostics" data-reveal>
+        <div class="terrain-checklist">
+          <article>
+            <strong>Accès & logistique</strong>
+            <span>Le bassin peut-il arriver jusqu’à l’emplacement prévu ?</span>
+          </article>
+          <article>
+            <strong>Implantation</strong>
+            <span>Où placer la piscine pour profiter du soleil, de la vue et de la circulation autour de la maison ?</span>
+          </article>
+          <article>
+            <strong>Budget réaliste</strong>
+            <span>Ce qui fait varier le prix : terrain, accès, options, terrassement et contraintes du chantier.</span>
+          </article>
+          <article>
+            <strong>Démarches</strong>
+            <span>Commune, PLU, surface, déclaration : les points à vérifier avant d’avancer.</span>
+          </article>
+        </div>
+
+        <div class="terrain-actions">
+          <a class="btn btn-water" href="#formulaire" data-track="terrain_cta_click">Voir si mon extérieur s’y prête</a>
+          <a hidden href="#formulaire" data-track="study_section_cta_click" aria-hidden="true" tabindex="-1">&Eacute;tude terrain</a>
+          <p>Un conseiller local vous rappelle pour vérifier les premières informations avant le déplacement.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="formats-section" id="formats" aria-labelledby="formats-title" data-hide-sticky>
+      <div class="formats-head" data-reveal>
+        <div class="section-kicker section-kicker-light">
+          <span></span>
+          FORMATS POPULAIRES
+        </div>
+        <h2 id="formats-title">Trois formats très demandés. Trois façons de profiter de l’extérieur.</h2>
+        <p>10m², 6x3, 7x3... ces formats reviennent souvent parce qu’ils répondent à des usages différents : coin baignade discret, confort familial, résidence secondaire ou location. Le bon choix dépend ensuite de l’espace, de l’accès, de la circulation autour du bassin et des règles locales.</p>
+        <p class="formats-note">Photos à titre d’inspiration. Le format exact est validé lors de l’étude terrain.</p>
+        <p class="formats-swipe-cue">Glissez pour comparer les formats</p>
+      </div>
+
+      <div class="format-stage" data-reveal>
+        <article class="format-card format-card-featured format-card-compact">
+          <a href="#formulaire" data-track="format_10m2_click" data-format-choice="10m2" aria-label="Préselectionner le format 10m²">
+            <figure>
+              <img src="assets/format-10m2.webp" alt="Piscine compacte comme inspiration de format 10m²">
+              <figcaption>Visuel d’inspiration</figcaption>
+            </figure>
+            <div class="format-content">
+              <span class="format-size">10m²</span>
+              <h3>Pour optimiser un petit extérieur</h3>
+              <p>Une piste intéressante quand l’espace est compté, pour une résidence principale, secondaire ou un coin baignade plus discret.</p>
+              <p class="format-mini-price"><strong>À partir de 7&nbsp;750&nbsp;€ TTC</strong><span>hors terrassement, accessoires, options et promo</span></p>
+              <ul>
+                <li>À vérifier selon la commune, le PLU et la situation du terrain</li>
+                <li>Intéressant pour cadrer les démarches sans approximation</li>
+              </ul>
+              <span class="format-cta">Voir si ce format rentre chez moi</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="format-card format-card-family">
+          <a href="#formulaire" data-track="format_6x3_click" data-format-choice="6x3" aria-label="Préselectionner le format 6x3">
+            <figure>
+              <img src="assets/format-6x3.webp" alt="Piscine rectangulaire familiale comme inspiration de format 6x3">
+              <figcaption>Visuel d’inspiration</figcaption>
+            </figure>
+            <div class="format-content">
+              <span class="format-size">6x3</span>
+              <h3>L’équilibre familial</h3>
+              <p>Un format souvent recherché pour profiter d’un vrai confort de baignade, tout en gardant un jardin lisible et fluide.</p>
+              <ul>
+                <li>À valider avec l’accès et l’implantation</li>
+                <li>Adapté aux projets familiaux et résidences secondaires</li>
+              </ul>
+              <span class="format-cta">Imaginer un 6x3 chez moi</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="format-card format-card-comfort">
+          <a href="#formulaire" data-track="format_7x3_click" data-format-choice="7x3" aria-label="Préselectionner le format 7x3">
+            <figure>
+              <img src="assets/format-7x3.webp" alt="Piscine avec terrasse comme inspiration de format 7x3">
+              <figcaption>Visuel d’inspiration</figcaption>
+            </figure>
+            <div class="format-content">
+              <span class="format-size">7x3</span>
+              <h3>Plus d’aisance, sans perdre la ligne</h3>
+              <p>Une option confortable lorsque le terrain permet de garder une belle circulation autour de la piscine et de la terrasse.</p>
+              <ul>
+                <li>À confronter à la pente, au soleil et aux accès</li>
+                <li>Intéressant pour confort familial ou location saisonnière</li>
+              </ul>
+              <span class="format-cta">Voir si un 7x3 convient</span>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="budget-section" id="budget" aria-labelledby="budget-title" data-hide-sticky>
+      <div class="budget-copy" data-reveal>
+        <div class="section-kicker">
+          <span></span>
+          PRIX & DEVIS
+        </div>
+        <h2 id="budget-title">Un prix clair commence par les bons repères.</h2>
+        <p>Une piscine coque ne se résume pas au prix du bassin. En Corse, le budget dépend aussi de l’accès, du terrassement, du modèle, des équipements, des finitions et des contraintes du terrain.</p>
+        <p>Un projet complet évolue selon ces éléments. L’étude à domicile sert à éviter les estimations hors contexte et à comprendre ce qui compte vraiment pour votre maison.</p>
+        <p>Des solutions de financement peuvent aussi être étudiées via organisme partenaire, sous réserve d’acceptation.</p>
+        <a class="btn btn-water budget-cta" href="#formulaire" data-track="price_cta_click">
+          <span class="budget-cta-full">Estimer mon budget avec CPP</span>
+          <span class="budget-cta-short">Estimer mon budget</span>
+        </a>
+      </div>
+
+      <div class="budget-panel" data-reveal>
+        <div class="price-anchor-group">
+          <div class="price-anchor price-anchor-entry">
+            <span>MINI PISCINE 10M²</span>
+            <strong>À partir de 7&nbsp;750&nbsp;€ TTC</strong>
+            <p>hors terrassement, hors accessoires et options, hors promotion, selon modèle, accès et conditions du projet.</p>
+          </div>
+          <div class="price-anchor price-anchor-project">
+            <span>PROJET POSÉ</span>
+            <strong>Autour de 15&nbsp;000&nbsp;€</strong>
+            <p>repère indicatif selon terrain, accès, modèle, équipements, finitions et options validés lors de l’étude.</p>
+          </div>
+        </div>
+
+        <div class="budget-equation" aria-label="Variables qui composent le budget">
+          <span>Modèle</span>
+          <b>+</b>
+          <span>Terrain</span>
+          <b>+</b>
+          <span>Accès</span>
+          <b>+</b>
+          <span>Finitions</span>
+        </div>
+
+        <div class="budget-grid">
+          <article>
+            <span>01</span>
+            <strong>Format & modèle</strong>
+            <p>10m², 6x3, 7x3 ou autre format selon votre terrain et votre usage.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <strong>Accès chantier</strong>
+            <p>Livraison, passage, contraintes d’accès et organisation sur place.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <strong>Terrassement</strong>
+            <p>Terrain plat, en pente, rocheux ou à préparer avant la pose.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <strong>Équipements & finitions</strong>
+            <p>Filtration, sécurité, confort, options utiles et niveau de finition.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="coque-section" id="coque" aria-labelledby="coque-title" data-hide-sticky>
+      <div class="coque-copy" data-reveal>
+        <div class="section-kicker section-kicker-light">
+          <span></span>
+          COQUE POLYESTER
+        </div>
+        <h2 id="coque-title">Un bassin monobloc, préparé en atelier, pensé pour un chantier plus maîtrisé.</h2>
+        <p>Une coque polyester est fabriquée avant d’arriver chez vous. Le projet se joue donc sur deux choses : choisir le bon bassin, puis préparer sérieusement le terrain pour que la pose se fasse dans de bonnes conditions.</p>
+        <div class="coque-proof-row">
+          <article>
+            <strong>France Piscines Composites</strong>
+            <span>Distributeur exclusif en Corse, avec des bassins fabriqués à la commande selon le projet.</span>
+          </article>
+          <article>
+            <strong>Pose de la coque en 1 jour et demi</strong>
+            <span>Hors terrassement, lorsque le terrain est prêt et l’accès validé.</span>
+          </article>
+        </div>
+      </div>
+
+      <div class="coque-visual" data-reveal>
+        <div class="shell-orbit" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="shell-card">
+          <svg class="shell-svg" viewBox="0 0 640 340" role="img" aria-label="Illustration d’une coque polyester monobloc avec marches intégrées">
+            <defs>
+              <linearGradient id="shellBodyGradient" x1="102" y1="48" x2="528" y2="274" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#fffdf8"/>
+                <stop offset="0.5" stop-color="#edf1ee"/>
+                <stop offset="1" stop-color="#adc8cb"/>
+              </linearGradient>
+              <linearGradient id="shellWallGradient" x1="100" y1="190" x2="520" y2="292" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#c2d4d3"/>
+                <stop offset="0.52" stop-color="#72959c"/>
+                <stop offset="1" stop-color="#2c5260"/>
+              </linearGradient>
+              <linearGradient id="shellWaterGradient" x1="160" y1="104" x2="454" y2="224" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#9afbf7"/>
+                <stop offset="0.42" stop-color="#22cada"/>
+                <stop offset="1" stop-color="#046f91"/>
+              </linearGradient>
+              <radialGradient id="shellGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(398 106) rotate(118) scale(210 130)">
+                <stop offset="0" stop-color="#ffffff" stop-opacity="0.86"/>
+                <stop offset="0.46" stop-color="#ffffff" stop-opacity="0.16"/>
+                <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+              </radialGradient>
+              <linearGradient id="shellStepGradient" x1="360" y1="116" x2="470" y2="204" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#fbfff9" stop-opacity="0.9"/>
+                <stop offset="1" stop-color="#c9e4e3" stop-opacity="0.52"/>
+              </linearGradient>
+              <linearGradient id="shellRimDepthGradient" x1="120" y1="88" x2="526" y2="244" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#ffffff" stop-opacity="0.92"/>
+                <stop offset="1" stop-color="#d0dfdc" stop-opacity="0.74"/>
+              </linearGradient>
+              <filter id="shellSoftShadow" x="-15%" y="-20%" width="130%" height="145%">
+                <feDropShadow dx="0" dy="22" stdDeviation="18" flood-color="#00131d" flood-opacity="0.24"/>
+              </filter>
+            </defs>
+            <g class="shell-model" filter="url(#shellSoftShadow)">
+              <ellipse class="shell-ground-shadow" cx="318" cy="272" rx="230" ry="34"/>
+              <path class="shell-wall" d="M114 202 C106 238 134 263 179 267 L418 286 C467 290 505 269 516 232 L536 158 C525 195 488 213 438 210 L166 190 C129 187 108 169 112 137 Z"/>
+              <path class="shell-body" d="M118 72 C148 48 482 50 520 74 C545 90 552 116 542 149 L516 232 C506 263 470 279 423 276 L176 257 C128 253 101 229 109 190 L124 101 C127 86 130 77 118 72 Z"/>
+              <path class="shell-lip" d="M141 96 C171 79 443 80 477 98 C498 110 505 128 498 151 L477 216 C470 238 445 249 408 246 L189 230 C156 228 136 211 141 181 L151 120 C153 109 152 101 141 96 Z"/>
+              <path class="shell-inner-well" d="M161 114 C190 101 419 102 450 116 C469 125 475 140 470 158 L453 207 C448 223 427 232 398 230 L202 215 C177 213 160 201 164 178 L172 132 C174 123 175 118 161 114 Z"/>
+              <path class="shell-water-surface" d="M181 130 C210 120 397 120 426 131 C441 137 446 149 442 163 L430 197 C425 209 410 216 386 214 L211 201 C191 199 178 190 181 172 L188 141 C189 135 190 132 181 130 Z"/>
+              <path class="shell-water-glow" d="M181 130 C210 120 397 120 426 131 C441 137 446 149 442 163 L430 197 C425 209 410 216 386 214 L211 201 C191 199 178 190 181 172 L188 141 C189 135 190 132 181 130 Z"/>
+              <g class="shell-steps" aria-hidden="true">
+                <path d="M350 128 C381 128 410 132 427 139 L421 153 C404 147 374 144 344 144 Z"/>
+                <path d="M341 150 C372 150 402 155 418 163 L412 178 C394 169 365 165 334 166 Z"/>
+                <path d="M331 172 C362 172 391 178 407 188 L400 203 C383 192 353 187 322 188 Z"/>
+              </g>
+              <g class="shell-ribs" aria-hidden="true">
+                <path d="M132 225 L151 190"/>
+                <path d="M178 257 L188 220"/>
+                <path d="M230 262 L234 224"/>
+                <path d="M410 281 L399 244"/>
+                <path d="M478 255 L447 221"/>
+              </g>
+              <path class="shell-rim-highlight" d="M126 72 C161 51 483 52 516 75"/>
+              <path class="shell-inner-line" d="M164 115 C195 102 417 103 449 116"/>
+              <path class="shell-front-highlight" d="M181 256 C241 263 351 272 421 276"/>
+            </g>
+          </svg>
+          <div class="shell-annotation shell-annotation-a">Bassin monobloc</div>
+          <div class="shell-annotation shell-annotation-b">Forme préparée en atelier</div>
+          <div class="shell-annotation shell-annotation-c">Pose après préparation du terrain</div>
+        </div>
+
+        <div class="coque-layers" aria-label="Points de réassurance produit">
+          <article>
+            <span>01</span>
+            <strong>Structure polyester</strong>
+            <p>Bassin fabriqué à la commande, selon la gamme France Piscines Composites.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <strong>Rendu net</strong>
+            <p>Formes, escaliers et finitions choisis dans une gamme maîtrisée.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <strong>Garanties fabricant</strong>
+            <p>Garanties fabricant selon conditions, avec documents applicables à vérifier au devis.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <strong>Décennale</strong>
+            <p>Garantie décennale par capitalisation selon documents fabricant et assurances applicables.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="coque-actions" data-reveal>
+        <p>La coque simplifie une partie du chantier. Le bon cadrage, lui, sécurise tout ce qui l’entoure.</p>
+        <a class="btn btn-water" href="#formulaire" data-track="guarantee_cta_click"><span class="cta-desktop-text">Vérifier si la coque convient à mon projet</span><span class="cta-mobile-text">Vérifier mon projet</span></a>
+      </div>
+    </section>
+
+    <section class="why-section" id="pourquoi-cpp" aria-labelledby="why-title" data-hide-sticky>
+      <div class="why-intro" data-reveal>
+        <div class="section-kicker">
+          <span></span>
+          Pourquoi CPP
+        </div>
+        <h2 id="why-title">Une équipe locale pour un projet qui se joue sur place.</h2>
+        <p>Vous ne parlez pas à une plateforme nationale. Vous échangez avec une équipe présente sur l’île, capable de regarder l’accès, l’organisation du chantier et le suivi après la pose avant d’avancer un projet.</p>
+      </div>
+
+      <div class="why-media" data-reveal>
+        <figure>
+          <img src="assets/team-facade-clean.webp" alt="Équipe Corse Piscine Polyester devant le point de contact d'Ajaccio" loading="lazy">
+        </figure>
+        <div class="team-ribbon" aria-label="Équipe locale">
+          <span>Équipe locale</span>
+          <strong>sur le terrain</strong>
+        </div>
+      </div>
+
+      <div class="why-proof-stack" data-reveal>
+        <div class="why-proof-grid" aria-label="Repères Corse Piscine Polyester">
+          <article>
+            <span>25 ans d’expérience</span>
+            <p>Piscine coque polyester en Corse</p>
+          </article>
+          <article>
+            <span>France Piscines Composites</span>
+            <p>Distributeur exclusif en Corse</p>
+          </article>
+          <article>
+            <span>SAV sous 48h ouvrables</span>
+            <p>Selon diagnostic et conditions d’accès</p>
+          </article>
+        </div>
+
+        <div class="local-presence-card">
+          <div class="corsica-map" aria-hidden="true">
+            <svg class="corsica-shape" viewBox="0 0 170 320" role="img" aria-label="Carte stylisée de la Corse">
+              <path class="corsica-outline" d="M134.5 7 L133.9 11.3 L124.5 12.3 L124.5 28.5 L120.7 32.7 L118.7 44.4 L122.7 50.6 L123.2 60.8 L118.2 70.7 L109.3 61.5 L98.5 61.3 L84.1 70.8 L85.8 75.5 L62.3 80.2 L50.9 85.6 L47.6 93.5 L39.8 89.7 L30.1 109.1 L33.6 110.4 L29.9 115.2 L31.3 118.6 L27.6 117.8 L23.5 124.6 L14.3 128.8 L16.4 135.2 L18.4 136.9 L23.1 133.4 L25.8 135.8 L23.9 141.3 L35.5 146.9 L15.3 152.4 L19.8 160.4 L17.3 169.7 L21.2 174.1 L36.3 178.4 L38.4 184.7 L42.7 185.9 L40.7 189.8 L31.2 193.2 L30.7 201.6 L22.4 202.7 L26.4 208.3 L22 219.8 L28.3 214.2 L37 214.5 L44.5 210.1 L49.6 211.7 L51 215.6 L48.2 217.1 L48.9 223.6 L43.9 224.4 L48 227.6 L46.7 230.1 L39 232 L41 237.2 L31.3 243.3 L39.4 247.6 L48.1 244.6 L46.5 249.4 L48.9 251.6 L53.6 249.4 L65.9 253.7 L60.5 259.9 L49.9 263.2 L46.3 271.2 L49.7 273 L48.9 277.8 L56 279.8 L56.8 285.2 L61.5 284.2 L67.5 290 L93.7 299.2 L90.5 303.1 L91.1 308 L100.7 309.2 L103.1 313 L109.9 311.4 L115 300.7 L110.1 302 L109.6 298.7 L116.7 294.4 L117.5 283.2 L129.7 270.9 L127.7 267.7 L132.9 260.3 L133.4 218.9 L136.4 203.8 L153.8 177.4 L155.7 148.8 L152 92.1 L143.1 80.5 L141 72.8 L147.2 51.6 L142.7 16.9 L134.5 7 Z" />
+              <circle class="corsica-pin" cx="139.2" cy="96" r="8" />
+              <circle class="corsica-pin" cx="43.2" cy="211" r="8" />
+              <circle class="corsica-pin" cx="131.1" cy="194.6" r="8" />
+              <circle class="corsica-pin" cx="125.7" cy="207.4" r="8" />
+            </svg>
+          </div>
+          <div>
+            <strong>4 points de contact en Corse</strong>
+            <p>Prunelli-di-Fiumorbu / Migliacciaru, Ventiseri / Travo, Borgo et Ajaccio.</p>
+            <span>Déplacement sur toute la Corse.</span>
+          </div>
+        </div>
+
+        <a class="btn btn-water" href="#formulaire" data-track="trust_cta_click">Demander mon étude terrain offerte</a>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="realisations" aria-labelledby="gallery-title" data-hide-sticky>
+      <div class="gallery-head" data-reveal>
+        <div class="section-kicker section-kicker-light">
+          <span></span>
+          Réalisations locales
+        </div>
+        <h2 id="gallery-title">Des piscines pensées comme des lieux de vie, pas comme de simples bassins.</h2>
+        <div class="gallery-insight">
+          <strong>Ce que ces projets montrent</strong>
+          <ul>
+            <li>Une piscine doit créer un vrai lieu de vie, pas seulement remplir un espace.</li>
+            <li>La terrasse, la vue, l’ombre et les usages changent l’ambiance du projet.</li>
+            <li>Les inspirations servent à choisir une direction avant de vérifier ce qui marche chez vous.</li>
+          </ul>
+          <p class="gallery-note">Photos d’inspiration. Format validé sur place.</p>
+        </div>
+      </div>
+
+      <div class="gallery-cinema" data-reveal aria-label="Galerie de projets Corse Piscine Polyester">
+        <figure class="gallery-main">
+          <img src="assets/gallery-stone-aerial.webp" alt="Piscine coque avec plage et environnement en pierre" loading="lazy">
+          <figcaption>
+            <span>Projet extérieur</span>
+            <strong>Intégrer le bassin dans l'existant</strong>
+          </figcaption>
+        </figure>
+        <div class="gallery-strip" aria-label="Autres inspirations piscine">
+          <p class="gallery-swipe-cue">Glissez pour voir d’autres inspirations →</p>
+          <figure class="gallery-card gallery-card-tall">
+            <img src="assets/gallery-mountain-view.webp" alt="Piscine avec vue et terrasse" loading="lazy">
+            <figcaption>Vue dégagée & détente</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="assets/gallery-villa-terrace.webp" alt="Piscine près d'une villa avec terrasse" loading="lazy">
+            <figcaption>Villa, terrasse & accès</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="assets/gallery-curved-pool.webp" alt="Piscine coque arrondie dans un jardin" loading="lazy">
+            <figcaption>Jardin familial & confort</figcaption>
+          </figure>
+          <figure class="gallery-card gallery-card-wide">
+            <img src="assets/gallery-deck-reflection.webp" alt="Piscine avec terrasse bois et vue dégagée" loading="lazy">
+            <figcaption>Terrasse & lignes nettes</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="assets/gallery-pergola-view.webp" alt="Piscine vue depuis une terrasse ombragée" loading="lazy">
+            <figcaption>Ombre & usage quotidien</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="assets/gallery-green-aerial.webp" alt="Piscine vue du dessus avec jardin et terrasse claire" loading="lazy">
+            <figcaption>Maison & baignade au quotidien</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="gallery-proof" data-reveal>
+        <p>Le bon projet n’est pas seulement celui qui vous plaît en photo. C’est celui qui s’adapte à votre accès, votre extérieur et votre façon de vivre la maison.</p>
+        <a class="btn btn-water" href="#formulaire" data-track="reviews_cta_click">Faire étudier un projet similaire</a>
+      </div>
+    </section>
+
+
+    <section class="process-section" id="process" aria-labelledby="process-title" data-hide-sticky>
+      <div class="process-head" data-reveal>
+        <div class="section-kicker">
+          <span></span>
+          PROCESS
+        </div>
+        <h2 id="process-title">De l’envie au devis, sans avancer à l’aveugle.</h2>
+        <p>Vous décrivez le résultat recherché, CPP vérifie les points qui influencent le budget et vous aide à avancer vers une proposition claire.</p>
+      </div>
+
+      <div class="process-path" data-reveal aria-label="Process Corse Piscine Polyester en quatre &eacute;tapes">
+        <article class="process-step">
+            <span>01</span>
+            <div>
+            <strong>DEMANDE</strong>
+            <h3>Vous décrivez le projet</h3>
+            <p>Commune, format envisagé, délai, type de maison et premières contraintes d’accès.</p>
+          </div>
+        </article>
+        <article class="process-step">
+          <span>02</span>
+          <div>
+            <strong>RAPPEL</strong>
+            <h3>Un conseiller vous rappelle</h3>
+            <p>L’objectif est de vérifier les informations essentielles et d’éviter un devis vague ou hors contexte.</p>
+          </div>
+        </article>
+        <article class="process-step">
+          <span>03</span>
+          <div>
+            <strong>ÉTUDE TERRAIN</strong>
+            <h3>CPP vérifie le terrain</h3>
+            <p>Accès, pente, implantation, usage, démarches et budget sont regardés avec plus de précision.</p>
+          </div>
+        </article>
+        <article class="process-step">
+          <span>04</span>
+          <div>
+            <strong>DEVIS</strong>
+            <h3>Vous recevez un devis cadré</h3>
+            <p>Le devis tient compte du bassin, du terrain, des options et des conditions réelles du projet.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="process-bottom" data-reveal>
+        <p>Ce n’est pas un configurateur automatique. C’est une première étape pour cadrer votre projet avant de vous engager.</p>
+        <a class="btn btn-water" href="#formulaire" data-track="study_section_cta_click">Faire cadrer mon projet</a>
+      </div>
+    </section>
+
+
+    <section class="operations-section" id="operations" aria-labelledby="operations-title" data-hide-sticky>
+      <div class="operations-layout">
+        <div class="operations-head" data-reveal>
+          <div class="section-kicker section-kicker-light">
+            <span></span>
+            &Agrave; clarifier avant devis
+          </div>
+          <h2 id="operations-title">Les points à clarifier avant d’avancer.</h2>
+          <p>Budget, financement, d&eacute;claration, pose, SAV, garanties&nbsp;: ce sont souvent les sujets qui cr&eacute;ent de l&rsquo;incertitude. CPP vous aide à les cadrer avant de vous orienter vers un devis s&eacute;rieux.</p>
+          <div class="operations-actions operations-actions-desktop">
+            <a class="btn btn-water" href="#formulaire" data-track="price_cta_click">Clarifier mon projet avant devis</a>
+            <small>Un conseiller local vous rappelle pour v&eacute;rifier les premi&egrave;res informations.</small>
+          </div>
+        </div>
+
+        <div class="operations-grid" data-reveal aria-label="Points &agrave; clarifier avant devis">
+          <article class="operation-card">
+            <span>01</span>
+            <h3>Budget r&eacute;el</h3>
+            <p>Le budget d&eacute;pend du bassin, de l&rsquo;acc&egrave;s, du terrassement, des &eacute;quipements et des finitions.</p>
+          </article>
+          <article class="operation-card">
+            <span>02</span>
+            <h3>Financement</h3>
+            <p>CPP vous accompagne pour &eacute;tudier des solutions via organisme partenaire, sous r&eacute;serve d&rsquo;acceptation.</p>
+          </article>
+          <article class="operation-card">
+            <span>03</span>
+            <h3>D&eacute;claration</h3>
+            <p>Les d&eacute;marches d&eacute;pendent de la commune, de la surface, du PLU et de la situation du terrain.</p>
+          </article>
+          <article class="operation-card">
+            <span>04</span>
+            <h3>Pose</h3>
+            <p>La pose de la coque peut &ecirc;tre rapide lorsque le terrain est pr&ecirc;t et l&rsquo;acc&egrave;s valid&eacute;. Hors terrassement.</p>
+          </article>
+          <article class="operation-card">
+            <span>05</span>
+            <h3>SAV</h3>
+            <p>Intervention SAV sous 48h ouvrables, selon diagnostic et conditions d&rsquo;acc&egrave;s.</p>
+          </article>
+          <article class="operation-card">
+            <span>06</span>
+            <h3>Garanties</h3>
+            <p>Documents fabricant et assurances &agrave; v&eacute;rifier au devis selon le p&eacute;rim&egrave;tre applicable.</p>
+          </article>
+        </div>
+
+        <div class="operations-actions operations-actions-mobile" data-reveal>
+          <a class="btn btn-water" href="#formulaire" data-track="price_cta_click">Clarifier mon projet avant devis</a>
+          <small>Un conseiller local vous rappelle pour v&eacute;rifier les premi&egrave;res informations.</small>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="compare-section" id="comparatif" aria-labelledby="compare-title" data-hide-sticky>
+      <div class="compare-head" data-reveal>
+        <div class="section-kicker">
+          <span></span>
+          Comparer sans se tromper
+        </div>
+        <h2 id="compare-title">Un devis rapide rassure. Un projet clair se construit autrement.</h2>
+        <p>Un prix affiché donne une première idée. Mais entre accès, commune, implantation, usage, financement et finitions, le devis utile est celui qui colle vraiment à votre maison.</p>
+      </div>
+
+      <div class="compare-board" data-reveal aria-label="Comparatif des approches de projet piscine">
+        <article class="compare-column compare-featured">
+          <div class="compare-label">Approche CPP</div>
+          <div class="compare-recommend">Recommand&eacute; pour un projet en Corse</div>
+          <h3>&Eacute;tude locale &agrave; domicile</h3>
+          <ul>
+            <li>Terrain, acc&egrave;s et implantation v&eacute;rifi&eacute;s avant de parler mod&egrave;le.</li>
+            <li>Commune, pente et contraintes regard&eacute;es sur place.</li>
+            <li>Devis construit selon les conditions r&eacute;elles observ&eacute;es.</li>
+            <li>Interlocuteur local en Corse pour cadrer la suite.</li>
+          </ul>
+          <a class="btn btn-water" href="#formulaire" data-track="trust_cta_click">Faire vérifier mon projet</a>
+        </article>
+
+        <article class="compare-column">
+          <div class="compare-label">Estimation rapide</div>
+          <h3>Utile pour une premi&egrave;re id&eacute;e</h3>
+          <ul>
+            <li>Donne un premier ordre d&rsquo;id&eacute;e.</li>
+            <li>Rapide, mais souvent bas&eacute; sur les informations d&eacute;clar&eacute;es.</li>
+            <li>&Agrave; compl&eacute;ter si l&rsquo;acc&egrave;s, la pente ou la commune peuvent changer le projet.</li>
+            <li>Ne remplace pas une lecture terrain.</li>
+          </ul>
+        </article>
+
+        <article class="compare-column">
+          <div class="compare-label">&Agrave; g&eacute;rer soi-m&ecirc;me</div>
+          <h3>Peut convenir dans certains cas</h3>
+          <ul>
+            <li>Possible si vous pilotez vous-m&ecirc;me le chantier.</li>
+            <li>Demande plus de coordination, de temps et de vigilance.</li>
+            <li>Les co&ucirc;ts annexes peuvent appara&icirc;tre plus tard.</li>
+            <li>Moins adapt&eacute; si vous voulez un interlocuteur local.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="compare-note" data-reveal>
+        <p>Le meilleur devis n&rsquo;est pas forc&eacute;ment le plus rapide. C&rsquo;est celui qui reste clair quand le budget, l&rsquo;acc&egrave;s et le chantier deviennent r&eacute;els.</p>
+      </div>
+    </section>
+
+    <section class="reviews-section" id="avis" aria-labelledby="reviews-title" data-hide-sticky>
+      <div class="reviews-shell">
+        <div class="reviews-copy" data-reveal>
+          <div class="section-kicker section-kicker-light">
+            <span></span>
+            Avis clients
+          </div>
+          <h2 id="reviews-title">Des avis Google, et de vrais projets derri&egrave;re.</h2>
+          <p>Des clients parlent de projets men&eacute;s en Corse, de l'&eacute;coute de l'&eacute;quipe, du suivi et du s&eacute;rieux apport&eacute; avant comme apr&egrave;s la pose.</p>
+          <div class="google-score-card" aria-label="Note moyenne Google 4,7 sur 5">
+            <div class="google-score-mark" aria-hidden="true">
+              <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            </div>
+            <div class="google-score-copy">
+              <strong>4,7/5</strong>
+              <span>Note moyenne sur Google</span>
+            </div>
+            <span class="google-score-proof">avis clients v&eacute;rifi&eacute;s</span>
+          </div>
+          <div class="reviews-actions">
+            <a class="btn btn-water" href="#formulaire" data-track="reviews_cta_click"><span class="cta-desktop-text">Parler de mon projet avec un conseiller local</span><span class="cta-mobile-text">Parler de mon projet</span></a>
+            <span>Extraits d'avis Google publics. Textes raccourcis pour la lisibilit&eacute;.</span>
+          </div>
+        </div>
+
+        <div class="reviews-board reviews-board-photo" data-reveal>
+          <p class="review-swipe-cue">Glissez pour lire d'autres avis &rarr;</p>
+          <div class="google-review-grid" aria-label="Extraits d'avis Google publics">
+            <article class="google-review-card google-review-photo">
+              <img src="assets/review-01.webp" alt="Piscine coque avec abri bas et terrasse bois" loading="lazy">
+              <div class="review-topline-mini">
+                <span>Avis Google</span>
+                <div class="mini-stars" aria-label="Avis positif"><i></i><i></i><i></i><i></i><i></i></div>
+              </div>
+              <blockquote>&ldquo;Travail s&eacute;rieux, &eacute;quipe efficace et professionnelle !&rdquo;</blockquote>
+              <p>&ldquo;Je recommande vivement !&rdquo;</p>
+              <footer>Samuel Ohayon</footer>
+            </article>
+
+            <article class="google-review-card google-review-photo">
+              <img src="assets/review-02.webp" alt="Piscine int&eacute;gr&eacute;e dans un jardin paysager" loading="lazy">
+              <div class="review-topline-mini">
+                <span>Avis Google</span>
+                <div class="mini-stars" aria-label="Avis positif"><i></i><i></i><i></i><i></i><i></i></div>
+              </div>
+              <blockquote>&ldquo;Vous &ecirc;tes &agrave; la bonne adresse.&rdquo;</blockquote>
+              <p>&ldquo;Tout a &eacute;t&eacute; ma&icirc;tris&eacute; de A &agrave; Z.&rdquo;</p>
+              <footer>Charles Joffet</footer>
+            </article>
+
+            <article class="google-review-card google-review-photo">
+              <img src="assets/review-03.webp" alt="Piscine familiale avec plage et espace d&eacute;tente" loading="lazy">
+              <div class="review-topline-mini">
+                <span>Avis Google</span>
+                <div class="mini-stars" aria-label="Avis positif"><i></i><i></i><i></i><i></i><i></i></div>
+              </div>
+              <blockquote>&ldquo;Le sav au top.&rdquo;</blockquote>
+              <p>&ldquo;Une tr&egrave;s bonne &eacute;quipe du commercial au technicien.&rdquo;</p>
+              <footer>Eric Cesari</footer>
+            </article>
+
+            <article class="google-review-card google-review-photo">
+              <img src="assets/review-04.webp" alt="Piscine avec terrasse couverte et jardin" loading="lazy">
+              <div class="review-topline-mini">
+                <span>Avis Google</span>
+                <div class="mini-stars" aria-label="Avis positif"><i></i><i></i><i></i><i></i><i></i></div>
+              </div>
+              <blockquote>&ldquo;Tr&egrave;s &agrave; l'&eacute;coute du client.&rdquo;</blockquote>
+              <p>&ldquo;Une gentillesse naturelle. Un apr&egrave;s-vente comp&eacute;tent.&rdquo;</p>
+              <footer>Kris Krispeg</footer>
+            </article>
+
+            <article class="google-review-card google-review-photo">
+              <img src="assets/review-05.webp" alt="Piscine avec terrasse bois et vue mer" loading="lazy">
+              <div class="review-topline-mini">
+                <span>Avis Google</span>
+                <div class="mini-stars" aria-label="Avis positif"><i></i><i></i><i></i><i></i><i></i></div>
+              </div>
+              <blockquote>&ldquo;Des professionnels qui se donnent du mal.&rdquo;</blockquote>
+              <p>&ldquo;Pour vous d&eacute;panner.&rdquo;</p>
+              <footer>Gilles Bidou</footer>
+            </article>
+
+            <article class="google-review-card google-review-photo">
+              <img src="assets/review-06.webp" alt="Piscine moderne avec terrasse bois et lignes nettes" loading="lazy">
+              <div class="review-topline-mini">
+                <span>Avis Google</span>
+                <div class="mini-stars" aria-label="Avis positif"><i></i><i></i><i></i><i></i><i></i></div>
+              </div>
+              <blockquote>&ldquo;Une &eacute;quipe tr&egrave;s impliqu&eacute;e.&rdquo;</blockquote>
+              <p>&ldquo;Un chef d'entreprise comp&eacute;tent, attentif et humain.&rdquo;</p>
+              <footer>Paul-Frantz Vidal</footer>
+            </article>
+
+            <article class="google-review-card google-review-photo">
+              <img src="assets/review-07.webp" alt="Piscine avec terrasse bois et horizon m&eacute;diterran&eacute;en" loading="lazy">
+              <div class="review-topline-mini">
+                <span>Avis Google</span>
+                <div class="mini-stars" aria-label="Avis positif"><i></i><i></i><i></i><i></i><i></i></div>
+              </div>
+              <blockquote>&ldquo;Parfait du d&eacute;but &agrave; la fin.&rdquo;</blockquote>
+              <p>&ldquo;Merci pour votre bon travail.&rdquo;</p>
+              <footer>Camille Kempf</footer>
+            </article>
+
+            <article class="google-review-card google-review-photo">
+              <img src="assets/review-08.webp" alt="Piscine rectangulaire vue du dessus avec terrasse" loading="lazy">
+              <div class="review-topline-mini">
+                <span>Avis Google</span>
+                <div class="mini-stars" aria-label="Avis positif"><i></i><i></i><i></i><i></i><i></i></div>
+              </div>
+              <blockquote>&ldquo;Professionnalisme et comp&eacute;tence.&rdquo;</blockquote>
+              <p>&ldquo;Vous pouvez vous adresser &agrave; cette enseigne en toute confiance.&rdquo;</p>
+              <footer>Dum&egrave;</footer>
+            </article>
+
+            <article class="google-review-card google-review-photo">
+              <img src="assets/review-09.webp" alt="Piscine dans une propri&eacute;t&eacute; arbor&eacute;e en Corse" loading="lazy">
+              <div class="review-topline-mini">
+                <span>Avis Google</span>
+                <div class="mini-stars" aria-label="Avis positif"><i></i><i></i><i></i><i></i><i></i></div>
+              </div>
+              <blockquote>&ldquo;Tr&egrave;s bonne enseigne de piscines en polyester.&rdquo;</blockquote>
+              <p>&ldquo;SAV de qualit&eacute;. Accueil tr&egrave;s aimable et comp&eacute;tent.&rdquo;</p>
+              <footer>Joseph CASANOVA</footer>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section" id="faq" aria-labelledby="faq-title" data-hide-sticky>
+      <div class="faq-head" data-reveal>
+        <div class="section-kicker">
+          <span></span>
+          Questions utiles
+        </div>
+        <h2 id="faq-title">Les questions &agrave; poser avant de choisir votre piscine coque.</h2>
+        <p>Budget, terrain, d&eacute;claration, format, pose, SAV&nbsp;: les bonnes r&eacute;ponses se v&eacute;rifient avant devis, pas une fois le chantier lanc&eacute;.</p>
+      </div>
+
+      <div class="faq-layout">
+        <aside class="faq-aside" data-reveal>
+          <strong>Une question propre &agrave; votre terrain&nbsp;?</strong>
+          <p>Commune, acc&egrave;s difficile, terrain en pente, r&eacute;sidence secondaire ou format h&eacute;sitant&nbsp;: le plus simple est de faire v&eacute;rifier les premi&egrave;res informations par un conseiller CPP.</p>
+          <a class="btn btn-water" href="#formulaire" data-track="final_cta_click">Faire v&eacute;rifier mon terrain</a>
+          <a class="faq-phone" href="tel:+33757094189" data-track="final_phone_click">07 57 09 41 89</a>
+        </aside>
+
+        <div class="faq-list" data-reveal>
+          <article class="faq-item">
+            <button type="button" id="faq-q1" aria-expanded="true" aria-controls="faq-a1" data-faq-button data-track="faq_open">
+              <span>Quel budget pr&eacute;voir pour une piscine coque pos&eacute;e en Corse ?</span>
+              <i></i>
+            </button>
+            <div id="faq-a1" class="faq-answer" role="region" aria-labelledby="faq-q1">
+              <p>Une mini piscine 10m&sup2; peut &ecirc;tre propos&eacute;e &agrave; partir de 7&nbsp;750&nbsp;&euro; TTC, hors terrassement, hors accessoires et options, hors promotion, selon mod&egrave;le et conditions du projet. Un projet de piscine coque pos&eacute;e &eacute;volue ensuite selon l&rsquo;acc&egrave;s, le terrassement, les &eacute;quipements et les finitions. L&rsquo;&eacute;tude &agrave; domicile permet de cadrer le budget selon votre terrain r&eacute;el.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button type="button" id="faq-q2" aria-expanded="false" aria-controls="faq-a2" data-faq-button data-track="faq_open">
+              <span>L'&eacute;tude terrain est-elle vraiment gratuite ?</span>
+              <i></i>
+            </button>
+            <div id="faq-a2" class="faq-answer" role="region" aria-labelledby="faq-q2" hidden>
+              <p>Oui, l&rsquo;&eacute;tude terrain est offerte et sans engagement. Elle sert &agrave; v&eacute;rifier les premi&egrave;res informations du projet avant de vous orienter vers un format, un budget et une suite r&eacute;aliste.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button type="button" id="faq-q3" aria-expanded="false" aria-controls="faq-a3" data-faq-button data-track="faq_open">
+              <span>Une piscine de 10m&sup2; est-elle toujours sans d&eacute;claration ?</span>
+              <i></i>
+            </button>
+            <div id="faq-a3" class="faq-answer" role="region" aria-labelledby="faq-q3" hidden>
+              <p>Non, ce point doit &ecirc;tre v&eacute;rifi&eacute; selon la commune, le PLU, la situation du terrain et le projet exact. Le format 10m&sup2; peut simplifier certaines d&eacute;marches, mais il ne doit pas &ecirc;tre pr&eacute;sent&eacute; comme une r&egrave;gle automatique.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button type="button" id="faq-q4" aria-expanded="false" aria-controls="faq-a4" data-faq-button data-track="faq_open">
+              <span>CPP peut-il aider pour la d&eacute;claration de travaux ?</span>
+              <i></i>
+            </button>
+            <div id="faq-a4" class="faq-answer" role="region" aria-labelledby="faq-q4" hidden>
+              <p>CPP peut vous aider &agrave; identifier les points &agrave; v&eacute;rifier et vous orienter dans les d&eacute;marches selon votre projet. Les r&egrave;gles d&eacute;pendent notamment de la commune, de la surface, du PLU et de la situation du terrain.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button type="button" id="faq-q5" aria-expanded="false" aria-controls="faq-a5" data-faq-button data-track="faq_open">
+              <span>Quel format choisir entre 10m&sup2;, 6x3 et 7x3 ?</span>
+              <i></i>
+            </button>
+            <div id="faq-a5" class="faq-answer" role="region" aria-labelledby="faq-q5" hidden>
+              <p>Le bon format d&eacute;pend de l&rsquo;espace disponible, de l&rsquo;acc&egrave;s, de l&rsquo;usage pr&eacute;vu, de la circulation autour du bassin et du budget. L&rsquo;&eacute;tude terrain permet de comparer les formats avec votre maison, pas seulement sur catalogue.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button type="button" id="faq-q6" aria-expanded="false" aria-controls="faq-a6" data-faq-button data-track="faq_open">
+              <span>Combien de temps prend la pose de la coque ?</span>
+              <i></i>
+            </button>
+            <div id="faq-a6" class="faq-answer" role="region" aria-labelledby="faq-q6" hidden>
+              <p>La pose de la coque peut &ecirc;tre rapide lorsque le terrain est pr&ecirc;t et l&rsquo;acc&egrave;s valid&eacute;. La pose de la coque peut se faire en 1 jour et demi, hors terrassement et hors pr&eacute;paration du terrain.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button type="button" id="faq-q7" aria-expanded="false" aria-controls="faq-a7" data-faq-button data-track="faq_open">
+              <span>Que se passe-t-il si l'acc&egrave;s au terrain est compliqu&eacute; ?</span>
+              <i></i>
+            </button>
+            <div id="faq-a7" class="faq-answer" role="region" aria-labelledby="faq-q7" hidden>
+              <p>L&rsquo;acc&egrave;s est justement l&rsquo;un des premiers points v&eacute;rifi&eacute;s. Passage, pente, largeur, organisation du chantier et contraintes de livraison peuvent influencer le format, le devis et la faisabilit&eacute;.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button type="button" id="faq-q8" aria-expanded="false" aria-controls="faq-a8" data-faq-button data-track="faq_open">
+              <span>Quelles garanties sont pr&eacute;vues ?</span>
+              <i></i>
+            </button>
+            <div id="faq-a8" class="faq-answer" role="region" aria-labelledby="faq-q8" hidden>
+              <p>Les garanties fabricant, documents d&rsquo;assurance et conditions applicables sont &agrave; v&eacute;rifier au devis selon le mod&egrave;le, le p&eacute;rim&egrave;tre du projet et les documents fournis.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button type="button" id="faq-q9" aria-expanded="false" aria-controls="faq-a9" data-faq-button data-track="faq_open">
+              <span>Le SAV est-il assur&eacute; partout en Corse ?</span>
+              <i></i>
+            </button>
+            <div id="faq-a9" class="faq-answer" role="region" aria-labelledby="faq-q9" hidden>
+              <p>CPP intervient en SAV sous 48h ouvrables, partout en Corse, selon diagnostic et conditions d&rsquo;acc&egrave;s.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button type="button" id="faq-q10" aria-expanded="false" aria-controls="faq-a10" data-faq-button data-track="faq_open">
+              <span>Est-ce adapt&eacute; &agrave; une r&eacute;sidence secondaire ou un g&icirc;te ?</span>
+              <i></i>
+            </button>
+            <div id="faq-a10" class="faq-answer" role="region" aria-labelledby="faq-q10" hidden>
+              <p>Oui, un projet peut &ecirc;tre &eacute;tudi&eacute; pour une r&eacute;sidence principale, secondaire ou un g&icirc;te. L&rsquo;usage pr&eacute;vu aide &agrave; choisir le format, les &eacute;quipements, la s&eacute;curit&eacute;, l&rsquo;entretien et le niveau de finition.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta-section" id="contact" aria-labelledby="final-title" data-hide-sticky>
+      <div class="final-cta-media" aria-hidden="true">
+        <img src="assets/final-cta.webp" alt="">
+      </div>
+      <div class="final-cta-overlay"></div>
+
+      <div class="final-cta-content" data-reveal>
+        <div class="section-kicker section-kicker-light">
+          <span></span>
+          Prochaine &eacute;tape
+        </div>
+        <h2 id="final-title">Votre projet piscine doit donner envie, puis rester clair jusqu’au devis.</h2>
+        <p>En Corse, le bon projet commence par une envie simple&nbsp;: profiter davantage de votre maison. CPP vous aide à cadrer le format, le budget, l’accès et les contraintes réelles avant de vous orienter vers la suite.</p>
+
+        <div class="final-cta-actions">
+          <a class="btn btn-water" href="#formulaire" data-track="final_cta_click">Voir si mon projet est possible</a>
+          <a class="btn btn-glass btn-final-phone" href="tel:+33757094189" data-track="final_phone_click">Appeler le 07 57 09 41 89</a>
+        </div>
+
+        <div class="final-cta-points" aria-label="Rappels de r&eacute;assurance">
+          <span>Projet en Corse</span>
+          <span>&Eacute;tude offerte</span>
+          <span>Devis cadr&eacute;</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-signature">
+      <img class="footer-logo" src="assets/cpp-logo-polyester.webp" alt="Corse Piscine Polyester">
+      <div>
+        <strong>Corse Piscine Polyester</strong>
+        <span>Piscines coque polyester en Corse</span>
+      </div>
+    </div>
+
+    <div class="footer-meta">
+      <span>Ajaccio · Borgo · Prunelli-di-Fiumorbu · Ventiseri</span>
+      <span>© 2026 Corse Piscine Polyester</span>
+    </div>
+  </footer>
+
+  <div class="mobile-sticky" aria-label="Actions rapides mobile">
+    <a href="tel:+33757094189" data-track="header_phone_click">Appeler</a>
+    <a href="#formulaire" data-track="header_cta_click">Étude offerte</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
