@@ -4460,6 +4460,8 @@ figcaption {
 
   .header-actions .header-phone {
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 34px;
     min-width: 34px;
     height: 34px;
@@ -4495,7 +4497,7 @@ figcaption {
     width: 15px;
     height: 15px;
     fill: currentColor;
-    transform: none;
+    transform: translate(-0.5px, 0.5px);
   }
 
   .header-actions .header-phone:hover {
