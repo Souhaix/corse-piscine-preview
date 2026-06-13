@@ -4477,6 +4477,7 @@ figcaption {
       inset 0 1px 0 rgba(255, 255, 255, 0.68),
       0 5px 12px rgba(0, 12, 20, 0.06);
     backdrop-filter: none;
+    line-height: 0;
   }
 
   .header-actions .header-phone span {
@@ -4494,10 +4495,13 @@ figcaption {
 
   .header-actions .header-phone svg {
     display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 15px;
     height: 15px;
     fill: currentColor;
-    transform: translate(-0.5px, 0.5px);
+    transform: translate(-50%, -50%);
   }
 
   .header-actions .header-phone:hover {
