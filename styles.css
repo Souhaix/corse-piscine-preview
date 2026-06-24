@@ -4644,6 +4644,12 @@ figcaption {
     display: none;
   }
 
+  .thank-you-reassurance {
+    max-width: 32ch;
+    margin: 16px auto 0;
+    text-align: center;
+  }
+
   .btn {
     width: 100%;
     min-height: 44px;
