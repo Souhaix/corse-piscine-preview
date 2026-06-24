@@ -2582,8 +2582,9 @@ figcaption {
 }
 
 .shell-annotation-a {
-  top: 28px;
-  left: 28px;
+  top: 58%;
+  left: 42%;
+  transform: translate(-50%, -50%);
 }
 
 .shell-annotation-b {
@@ -4641,7 +4642,26 @@ figcaption {
   }
 
   .proof-rail {
-    display: none;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6px;
+    margin-top: 14px;
+  }
+
+  .proof-rail article {
+    padding: 8px 7px;
+    border-radius: 15px;
+  }
+
+  .proof-rail strong {
+    font-size: clamp(0.7rem, 2.75vw, 0.78rem);
+    line-height: 1.1;
+  }
+
+  .proof-rail span {
+    margin-top: 3px;
+    font-size: clamp(0.56rem, 2.25vw, 0.64rem);
+    line-height: 1.25;
   }
 
   .diagnostic-card {
@@ -5128,8 +5148,9 @@ figcaption {
   }
 
   .shell-annotation-a {
-    top: 18px;
-    left: 18px;
+    top: 58%;
+    left: 38%;
+    transform: translate(-50%, -50%);
   }
 
   .shell-annotation-b {
