@@ -288,21 +288,23 @@ select {
 
 .header-actions .btn-ivory {
   color: #051b29;
-  background: linear-gradient(135deg, #72edf4 0%, #14abc0 100%);
-  border: 1px solid rgba(112, 236, 242, 0.58);
+  background:
+    linear-gradient(135deg, rgba(255, 250, 244, 0.98), rgba(232, 252, 252, 0.94));
+  border: 1px solid rgba(0, 168, 200, 0.2);
   box-shadow:
-    0 14px 30px rgba(0, 12, 20, 0.12),
-    0 12px 28px rgba(0, 168, 200, 0.22),
-    inset 0 1px 0 rgba(255, 255, 255, 0.48);
+    0 12px 26px rgba(0, 12, 20, 0.1),
+    0 8px 22px rgba(0, 168, 200, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.64);
 }
 
 .header-actions .btn-ivory:hover {
-  background: linear-gradient(135deg, #86f6fa 0%, #0fa0b5 100%);
-  border-color: rgba(112, 236, 242, 0.72);
+  background:
+    linear-gradient(135deg, #fffaf4, rgba(219, 250, 252, 0.98));
+  border-color: rgba(0, 168, 200, 0.32);
   box-shadow:
-    0 16px 34px rgba(0, 12, 20, 0.14),
-    0 14px 34px rgba(0, 168, 200, 0.28),
-    inset 0 1px 0 rgba(255, 255, 255, 0.56);
+    0 16px 34px rgba(0, 12, 20, 0.12),
+    0 10px 28px rgba(0, 168, 200, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
 }
 
 .btn-glass {
