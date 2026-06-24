@@ -4180,15 +4180,6 @@ figcaption {
   flex: 0 0 auto;
   width: 66px;
   height: auto;
-  padding: 5px 6px;
-  background:
-    linear-gradient(135deg, rgba(255, 250, 244, 0.12), rgba(112, 236, 242, 0.055)),
-    rgba(255, 250, 244, 0.045);
-  border: 1px solid rgba(255, 250, 244, 0.12);
-  border-radius: 12px;
-  box-shadow:
-    0 10px 24px rgba(0, 7, 12, 0.22),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08);
   opacity: 0.92;
 }
 
@@ -5985,9 +5976,7 @@ figcaption {
   }
 
   .footer-logo {
-    width: 58px;
-    padding: 4px 5px;
-    border-radius: 10px;
+    width: 62px;
   }
 
   .site-footer strong {
