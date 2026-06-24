@@ -155,6 +155,7 @@
   const formError = document.getElementById("formError");
   const leadPanel = document.getElementById("formulaire");
   const mobileSticky = document.querySelector(".mobile-sticky");
+  const siteHeader = document.querySelector(".site-header");
 
   if (form) {
     form.addEventListener("focusin", () => track("hero_form_start"), { once: true });
@@ -189,7 +190,9 @@
     const visibleStickyHideTargets = new Set();
     const updateMobileSticky = () => {
       const hasScrolledPastIntro = window.scrollY > 260;
-      mobileSticky.classList.toggle("is-hidden", !hasScrolledPastIntro || visibleStickyHideTargets.size > 0);
+      const shouldHideSticky = !hasScrolledPastIntro || visibleStickyHideTargets.size > 0;
+      mobileSticky.classList.toggle("is-hidden", shouldHideSticky);
+      siteHeader?.classList.toggle("is-hidden-by-sticky", !shouldHideSticky);
     };
     const stickyObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
