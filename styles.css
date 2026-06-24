@@ -4645,9 +4645,11 @@ figcaption {
   }
 
   .thank-you-reassurance {
-    max-width: 32ch;
+    max-width: none;
     margin: 16px auto 0;
+    font-size: clamp(0.78rem, 3.65vw, 0.92rem);
     text-align: center;
+    white-space: nowrap;
   }
 
   .btn {
