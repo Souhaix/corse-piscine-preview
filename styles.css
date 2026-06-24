@@ -3920,7 +3920,7 @@ figcaption {
   margin-top: 12px;
   margin-inline: auto;
   padding: 13px 16px;
-  color: rgba(255, 250, 244, 0.96);
+  color: var(--cyan);
   overflow: hidden;
   border: 1px solid rgba(112, 236, 242, 0.26);
   border-radius: 999px;
@@ -3941,7 +3941,7 @@ figcaption {
 }
 
 .faq-phone:hover {
-  color: #fffaf4;
+  color: var(--cyan);
   border-color: rgba(112, 236, 242, 0.26);
   box-shadow: 0 16px 36px rgba(0, 183, 213, 0.16), inset 0 0 0 1px rgba(112, 236, 242, 0.08);
   transform: translateY(-2px);
