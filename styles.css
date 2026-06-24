@@ -442,6 +442,9 @@ h1 em {
 
 .thank-you-page .lead {
   max-width: 610px;
+  color: rgba(255, 250, 244, 0.92);
+  line-height: 1.68;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.42);
 }
 
 .thank-you-pills {
@@ -465,9 +468,10 @@ h1 em {
 .thank-you-reassurance {
   max-width: 520px;
   margin: 14px 0 0;
-  color: rgba(255, 250, 244, 0.66);
+  color: rgba(255, 250, 244, 0.82);
   font-size: 0.92rem;
   line-height: 1.55;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.38);
 }
 
 .hero-actions {
@@ -4113,9 +4117,10 @@ figcaption {
 .final-cta-content p {
   max-width: 690px;
   margin: 0;
-  color: rgba(255, 250, 244, 0.78);
+  color: rgba(255, 250, 244, 0.9);
   font-size: clamp(1.02rem, 1.22vw, 1.2rem);
   line-height: 1.68;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.42);
 }
 
 .final-cta-actions {
