@@ -4501,11 +4501,11 @@ figcaption {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 34px;
-    min-width: 34px;
-    height: 34px;
-    min-height: 34px;
-    flex: 0 0 34px;
+    width: 42px;
+    min-width: 42px;
+    height: 42px;
+    min-height: 42px;
+    flex: 0 0 42px;
     padding: 0;
     font-size: 0;
     color: var(--sea);
@@ -4537,8 +4537,8 @@ figcaption {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 15px;
-    height: 15px;
+    width: 17px;
+    height: 17px;
     fill: currentColor;
     transform: translate(-50%, -50%);
   }
