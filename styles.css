@@ -2249,7 +2249,7 @@ figcaption {
   display: grid;
   grid-template-columns: 148px 1fr;
   gap: 20px;
-  align-items: center;
+  align-items: stretch;
   margin: 14px 0 26px;
   padding: 18px 20px;
   color: var(--white);
@@ -2262,6 +2262,7 @@ figcaption {
 
 .corsica-map {
   position: relative;
+  height: 100%;
   min-height: 182px;
   border-radius: 24px;
   background:
@@ -2272,11 +2273,11 @@ figcaption {
 
 .corsica-shape {
   position: absolute;
-  top: 3px;
+  top: 50%;
   left: 50%;
-  width: 138px;
-  height: 176px;
-  transform: translateX(-50%);
+  width: auto;
+  height: min(230px, calc(100% - 12px));
+  transform: translate(-50%, -50%);
   overflow: visible;
   filter:
     drop-shadow(0 0 8px rgba(112, 236, 242, 0.46))
@@ -2313,6 +2314,10 @@ figcaption {
   margin: 0 0 10px;
   color: rgba(255, 250, 244, 0.72);
   line-height: 1.55;
+}
+
+.local-presence-card > div:not(.corsica-map) {
+  align-self: center;
 }
 
 .local-presence-card .local-service-line {
@@ -5325,11 +5330,11 @@ figcaption {
   }
 
   .corsica-shape {
-    top: 2px;
+    top: 50%;
     left: 50%;
-    width: 104px;
+    width: auto;
     height: 132px;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
   }
 
   .local-presence-card strong {
