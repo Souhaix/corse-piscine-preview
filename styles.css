@@ -4941,22 +4941,6 @@ figcaption {
   .format-card a:hover,
   .format-card a:focus,
   .format-card a:active {
-    border-color: rgba(255, 255, 255, 0.16);
-    box-shadow: 0 26px 86px rgba(0, 11, 18, 0.32);
-    transform: none;
-  }
-
-  .format-card a:hover img,
-  .format-card a:focus img,
-  .format-card a:active img {
-    transform: scale(1.02);
-  }
-
-  .format-card a:hover .format-cta,
-  .format-card a:focus .format-cta,
-  .format-card a:active .format-cta {
-    background: rgba(112, 236, 242, 0.92);
-    box-shadow: none;
     transform: none;
   }
 
