@@ -184,6 +184,7 @@
   if (mobileSticky && leadPanel && "IntersectionObserver" in window) {
     const stickyHideTargets = [
       leadPanel,
+      document.getElementById("formats"),
       document.getElementById("contact"),
       document.querySelector(".site-footer")
     ].filter(Boolean);

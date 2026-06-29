@@ -4919,10 +4919,11 @@ figcaption {
     display: flex;
     gap: 12px;
     width: calc(100% + 16px);
-    margin: 0;
-    padding: 0 16px 4px 0;
+    margin: -4px 0 0;
+    padding: 8px 16px 18px 0;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
+    scroll-padding-inline: 0 16px;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
   }
