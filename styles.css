@@ -4537,8 +4537,8 @@ figcaption {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 18px;
-    height: 18px;
+    width: 15px;
+    height: 15px;
     fill: currentColor;
     transform: translate(-50%, -50%);
   }
