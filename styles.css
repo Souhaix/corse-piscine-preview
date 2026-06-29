@@ -4919,8 +4919,8 @@ figcaption {
     display: flex;
     gap: 12px;
     width: calc(100% + 16px);
-    margin: -10px 0 0;
-    padding: 16px 16px 2px 0;
+    margin: 0;
+    padding: 0 16px 4px 0;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
     scroll-snap-type: x mandatory;
@@ -4933,7 +4933,7 @@ figcaption {
 
   .format-card,
   .format-card-featured {
-    min-height: 428px;
+    min-height: 420px;
     flex: 0 0 84%;
     scroll-snap-align: start;
   }
