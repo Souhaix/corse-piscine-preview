@@ -4923,7 +4923,6 @@ figcaption {
     padding: 16px 16px 2px 0;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
-    scroll-padding-inline: 0 16px;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
   }
@@ -4937,6 +4936,28 @@ figcaption {
     min-height: 428px;
     flex: 0 0 84%;
     scroll-snap-align: start;
+  }
+
+  .format-card a:hover,
+  .format-card a:focus,
+  .format-card a:active {
+    border-color: rgba(255, 255, 255, 0.16);
+    box-shadow: 0 26px 86px rgba(0, 11, 18, 0.32);
+    transform: none;
+  }
+
+  .format-card a:hover img,
+  .format-card a:focus img,
+  .format-card a:active img {
+    transform: scale(1.02);
+  }
+
+  .format-card a:hover .format-cta,
+  .format-card a:focus .format-cta,
+  .format-card a:active .format-cta {
+    background: rgba(112, 236, 242, 0.92);
+    box-shadow: none;
+    transform: none;
   }
 
   .format-content,
