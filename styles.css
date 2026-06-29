@@ -4943,7 +4943,7 @@ figcaption {
   .format-card a:active {
     border-color: rgba(255, 255, 255, 0.16);
     box-shadow: 0 26px 86px rgba(0, 11, 18, 0.32);
-    transform: none;
+    transform: scale(1.012);
   }
 
   .format-content,
