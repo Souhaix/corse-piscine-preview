@@ -239,29 +239,4 @@
       });
     }, { passive: true });
   }
-
-  const proofCards = document.querySelectorAll(".why-proof-grid article");
-  const canUsePointerEffects = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
-  if (proofCards.length && canUsePointerEffects && !reduceMotion) {
-    proofCards.forEach((card) => {
-      card.addEventListener("pointermove", (event) => {
-        const rect = card.getBoundingClientRect();
-        const x = event.clientX - rect.left;
-        const y = event.clientY - rect.top;
-        const px = x / rect.width;
-        const py = y / rect.height;
-        card.style.setProperty("--mx", `${px * 100}%`);
-        card.style.setProperty("--my", `${py * 100}%`);
-        card.style.setProperty("--ry", `${(px - 0.5) * 5}deg`);
-        card.style.setProperty("--rx", `${(0.5 - py) * 5}deg`);
-      });
-
-      card.addEventListener("pointerleave", () => {
-        card.style.setProperty("--mx", "50%");
-        card.style.setProperty("--my", "50%");
-        card.style.setProperty("--rx", "0deg");
-        card.style.setProperty("--ry", "0deg");
-      });
-    });
-  }
 })();
