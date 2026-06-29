@@ -4171,54 +4171,36 @@ figcaption {
 }
 
 .site-footer {
-  position: relative;
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 28px;
+  gap: 22px;
   align-items: center;
-  padding: 26px clamp(18px, 4vw, 64px);
+  padding: 24px clamp(18px, 4vw, 64px);
   color: rgba(255, 250, 244, 0.64);
   background:
-    radial-gradient(circle at 18% 0%, rgba(112, 236, 242, 0.1), transparent 32%),
-    linear-gradient(180deg, #041a28, #031521 82%);
+    linear-gradient(180deg, rgba(3, 21, 33, 0.98), #031521);
   border-top: 1px solid rgba(255, 255, 255, 0.075);
-}
-
-.site-footer::before {
-  position: absolute;
-  top: 0;
-  left: clamp(18px, 4vw, 64px);
-  right: clamp(18px, 4vw, 64px);
-  height: 1px;
-  content: "";
-  background: linear-gradient(90deg, transparent, rgba(112, 236, 242, 0.22), transparent);
 }
 
 .footer-signature {
   display: inline-flex;
   align-items: center;
   min-width: 0;
-  gap: 14px;
+  gap: 12px;
 }
 
 .footer-logo {
   display: block;
   flex: 0 0 auto;
-  width: 58px;
+  width: 66px;
   height: auto;
-  padding: 5px;
-  background: rgba(255, 250, 244, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 10px;
-  box-shadow: 0 12px 30px rgba(0, 12, 20, 0.18);
-  opacity: 0.96;
+  opacity: 0.92;
 }
 
 .site-footer strong {
   display: block;
   color: var(--white);
-  font-size: 0.95rem;
-  font-weight: 850;
+  font-size: 0.9rem;
   line-height: 1.16;
 }
 
@@ -4233,15 +4215,14 @@ figcaption {
 .footer-meta {
   display: grid;
   justify-items: end;
-  gap: 6px;
+  gap: 4px;
   text-align: right;
 }
 
 .footer-meta span {
   margin: 0;
-  color: rgba(255, 250, 244, 0.5);
+  color: rgba(255, 250, 244, 0.44);
   font-size: 0.74rem;
-  letter-spacing: 0.01em;
 }
 
 [data-reveal] {
@@ -6019,18 +6000,18 @@ figcaption {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    gap: 10px;
-    padding: 20px 16px 24px;
+    gap: 12px;
+    padding: 22px 16px 30px;
     text-align: center;
   }
 
   .footer-signature {
     justify-content: center;
-    gap: 11px;
+    gap: 10px;
   }
 
   .footer-logo {
-    width: 56px;
+    width: 62px;
   }
 
   .site-footer strong {
@@ -6043,8 +6024,8 @@ figcaption {
 
   .footer-meta {
     justify-items: center;
-    gap: 4px;
-    max-width: 34ch;
+    gap: 5px;
+    max-width: 30ch;
     text-align: center;
   }
 
