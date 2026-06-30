@@ -34,6 +34,40 @@ body {
   text-rendering: geometricPrecision;
 }
 
+/* GHL shell reset: LeadConnector wraps custom code in constrained containers. */
+.bg-fixed,
+#preview-container,
+#app,
+.hl_page-preview,
+.hl_page-preview--content,
+.hl_page-preview--content .section-gaCM0m-12m,
+.hl_page-preview--content .row-lSItaTdBUw,
+.hl_page-preview--content .col-U1UnLN4_m3,
+#section-gaCM0m-12m,
+#section-gaCM0m-12m > .inner,
+#row-lSItaTdBUw,
+#row-lSItaTdBUw > .inner,
+#col-U1UnLN4_m3,
+#col-U1UnLN4_m3 > .inner,
+#col-U1UnLN4_m3 > .vertical.inner,
+.custom-code-BpDYnmrJvb,
+.custom-code-BpDYnmrJvb .custom-code-container,
+.custom-code-container,
+.ccustom-code-BpDYnmrJvb {
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  overflow-x: hidden !important;
+  background-color: var(--navy) !important;
+}
+
+.hl_page-preview--content #section-gaCM0m-12m > .inner {
+  max-width: none !important;
+}
+
 img {
   display: block;
   width: 100%;
