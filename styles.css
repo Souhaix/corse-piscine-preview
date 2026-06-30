@@ -1406,6 +1406,28 @@ figcaption {
   max-width: 420px;
 }
 
+@media (min-width: 901px) {
+  .format-content h3 {
+    min-height: 2.1em;
+  }
+
+  .format-content p:not(.format-mini-price) {
+    min-height: 4.65em;
+  }
+
+  .format-card-family .format-content p:not(.format-mini-price)::after,
+  .format-card-comfort .format-content p:not(.format-mini-price)::after {
+    display: block;
+    height: 56px;
+    margin-top: 12px;
+    content: "";
+  }
+
+  .format-content ul {
+    min-height: 74px;
+  }
+}
+
 .budget-section {
   position: relative;
   scroll-margin-top: 104px;
