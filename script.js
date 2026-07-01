@@ -1,5 +1,31 @@
 ﻿(function () {
   const qs = new URLSearchParams(window.location.search);
+  function cleanupGhlDuplicateEmbeds() {
+    const keepFirst = (selector) => {
+      const nodes = Array.from(document.querySelectorAll(selector));
+      nodes.slice(1).forEach((node) => node.remove());
+    };
+
+    keepFirst(".site-header");
+    keepFirst("main");
+    keepFirst(".site-footer");
+    keepFirst(".mobile-sticky");
+
+    const styleLinks = Array.from(document.querySelectorAll('link[href*="corse-piscine-preview/styles.css"]'));
+    const latest = styleLinks.find((link) => link.href.includes("ghl-20260701-02")) || styleLinks[0];
+    styleLinks.forEach((link) => {
+      if (link !== latest) link.remove();
+    });
+  }
+
+  cleanupGhlDuplicateEmbeds();
+  window.addEventListener("load", cleanupGhlDuplicateEmbeds, { once: true });
+  window.setTimeout(cleanupGhlDuplicateEmbeds, 0);
+  window.setTimeout(cleanupGhlDuplicateEmbeds, 700);
+
+  if (window.__CPP_LANDING_INITIALIZED__) return;
+  window.__CPP_LANDING_INITIALIZED__ = true;
+
   const hiddenMap = {
     gclid: qs.get("gclid") || "",
     utm_source: qs.get("utm_source") || "",
@@ -27,7 +53,9 @@
 
   document.querySelectorAll("[data-track]").forEach((el) => {
     el.addEventListener("click", () => {
-      track(el.getAttribute("data-track"), {
+      const eventName = el.getAttribute("data-track");
+      track(eventName, {
+        source: eventName === "hero_form_start" ? "hero_cta_click" : "cta_click",
         text: el.textContent.trim(),
         href: el.getAttribute("href") || ""
       });
@@ -158,7 +186,7 @@
   const siteHeader = document.querySelector(".site-header");
 
   if (form) {
-    form.addEventListener("focusin", () => track("hero_form_start"), { once: true });
+    form.addEventListener("focusin", () => track("hero_form_start", { source: "form_focus" }), { once: true });
 
     form.addEventListener("submit", (event) => {
       event.preventDefault();
@@ -169,6 +197,7 @@
       }
       if (formError) formError.hidden = true;
       track(form.getAttribute("data-track-submit") || "hero_submit", {
+        source: "form_submit",
         form_variant: form.querySelector("[name='form_variant']")?.value || "ghl_one_step_compact",
         format: form.elements.format.value,
         timeline: form.elements.timeline.value,
