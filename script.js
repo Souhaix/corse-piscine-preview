@@ -35,11 +35,11 @@
     const iframe = document.getElementById("inline-UWryoKQjx8R0obwGyzes");
     if (!iframe) return;
     const mobile = window.matchMedia("(max-width: 720px)").matches;
-    const frameHeight = mobile ? "760px" : "780px";
+    const frameHeight = mobile ? "900px" : "880px";
     iframe.style.height = frameHeight;
     iframe.style.minHeight = frameHeight;
     iframe.style.overflow = "hidden";
-    iframe.setAttribute("data-height", mobile ? "760" : "780");
+    iframe.setAttribute("data-height", mobile ? "900" : "880");
     iframe.setAttribute("scrolling", "no");
   }
 
