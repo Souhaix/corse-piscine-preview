@@ -34,7 +34,7 @@
   function normalizeGhlFormFrame() {
     const iframe = document.getElementById("inline-UWryoKQjx8R0obwGyzes");
     if (!iframe) return;
-    const frameHeight = "700px";
+    const frameHeight = "760px";
     iframe.style.height = frameHeight;
     iframe.style.minHeight = frameHeight;
     iframe.style.overflow = "hidden";
