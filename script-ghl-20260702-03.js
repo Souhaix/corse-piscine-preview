@@ -31,6 +31,22 @@
   window.setTimeout(cleanupGhlDuplicateEmbeds, 0);
   window.setTimeout(cleanupGhlDuplicateEmbeds, 700);
 
+  function getTrackingParams() {
+    return {
+      gclid: qs.get("gclid") || "",
+      utm_source: qs.get("utm_source") || "",
+      utm_medium: qs.get("utm_medium") || "",
+      utm_campaign: qs.get("utm_campaign") || "",
+      utm_term: qs.get("utm_term") || "",
+      utm_content: qs.get("utm_content") || "",
+      landing_page: window.location.href,
+      hero_variant: "offer_11999_ttc",
+      form_variant: "ghl_native_one_step",
+      device: window.matchMedia("(max-width: 759px)").matches ? "mobile" : "desktop",
+      referrer: document.referrer || ""
+    };
+  }
+
   function normalizeGhlFormFrame() {
     const iframe = document.getElementById("inline-UWryoKQjx8R0obwGyzes");
     if (!iframe) return;
@@ -39,8 +55,21 @@
     iframe.style.minHeight = frameHeight;
     iframe.style.overflow = "hidden";
     iframe.setAttribute("scrolling", "no");
-    iframe.setAttribute("data-height", "700");
-    iframe.setAttribute("scrolling", "no");
+    iframe.setAttribute("data-height", "658");
+
+    try {
+      const url = new URL(iframe.src);
+      let changed = false;
+      Object.entries(getTrackingParams()).forEach(([key, value]) => {
+        if (value && url.searchParams.get(key) !== value) {
+          url.searchParams.set(key, value);
+          changed = true;
+        }
+      });
+      if (changed) iframe.src = url.toString();
+    } catch (error) {
+      if (window.console && console.debug) console.debug("[ghl-form]", error);
+    }
   }
 
   normalizeGhlFormFrame();
@@ -69,17 +98,7 @@
   if (window.__CPP_LANDING_INITIALIZED__) return;
   window.__CPP_LANDING_INITIALIZED__ = true;
 
-  const hiddenMap = {
-    gclid: qs.get("gclid") || "",
-    utm_source: qs.get("utm_source") || "",
-    utm_medium: qs.get("utm_medium") || "",
-    utm_campaign: qs.get("utm_campaign") || "",
-    utm_term: qs.get("utm_term") || "",
-    utm_content: qs.get("utm_content") || "",
-    landing_page: window.location.pathname,
-    device: window.matchMedia("(max-width: 759px)").matches ? "mobile" : "desktop",
-    referrer: document.referrer || ""
-  };
+  const hiddenMap = getTrackingParams();
 
   document.querySelectorAll("[data-hidden-field]").forEach((field) => {
     const key = field.getAttribute("data-hidden-field");
