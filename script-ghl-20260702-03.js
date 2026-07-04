@@ -34,12 +34,11 @@
   function normalizeGhlFormFrame() {
     const iframe = document.getElementById("inline-UWryoKQjx8R0obwGyzes");
     if (!iframe) return;
-    const mobile = window.matchMedia("(max-width: 720px)").matches;
-    const frameHeight = mobile ? "900px" : "880px";
+    const frameHeight = "760px";
     iframe.style.height = frameHeight;
     iframe.style.minHeight = frameHeight;
     iframe.style.overflow = "hidden";
-    iframe.setAttribute("data-height", mobile ? "900" : "880");
+    iframe.setAttribute("data-height", "760");
     iframe.setAttribute("scrolling", "no");
   }
 
