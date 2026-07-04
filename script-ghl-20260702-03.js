@@ -34,10 +34,11 @@
   function normalizeGhlFormFrame() {
     const iframe = document.getElementById("inline-UWryoKQjx8R0obwGyzes");
     if (!iframe) return;
-    const frameHeight = "760px";
+    const frameHeight = "658px";
     iframe.style.height = frameHeight;
     iframe.style.minHeight = frameHeight;
     iframe.style.overflow = "hidden";
+    iframe.setAttribute("scrolling", "no");
     iframe.setAttribute("data-height", "700");
     iframe.setAttribute("scrolling", "no");
   }
