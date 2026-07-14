@@ -50,12 +50,34 @@
   function normalizeGhlFormFrame() {
     const iframe = document.getElementById("inline-UWryoKQjx8R0obwGyzes");
     if (!iframe) return;
-    const frameHeight = "658px";
-    iframe.style.height = frameHeight;
-    iframe.style.minHeight = frameHeight;
+
+    iframe.style.width = "100%";
+    iframe.style.display = "block";
+    iframe.style.border = "0";
     iframe.style.overflow = "hidden";
     iframe.setAttribute("scrolling", "no");
-    iframe.setAttribute("data-height", "658");
+
+    // GHL's embed script updates the inline height whenever validation
+    // messages appear. Preserve that measured value as an inline !important
+    // declaration so legacy builder CSS cannot lock the frame to 658/760px.
+    const keepMeasuredHeight = () => {
+      const measuredHeight = iframe.style.getPropertyValue("height");
+      if (!measuredHeight || !/^[0-9.]+px$/.test(measuredHeight)) return;
+
+      iframe.style.setProperty("min-height", "0px", "important");
+      if (iframe.style.getPropertyPriority("height") !== "important") {
+        iframe.style.setProperty("height", measuredHeight, "important");
+      }
+    };
+
+    if (!iframe.dataset.cppResizeGuard) {
+      iframe.dataset.cppResizeGuard = "true";
+      new MutationObserver(keepMeasuredHeight).observe(iframe, {
+        attributes: true,
+        attributeFilter: ["style"]
+      });
+    }
+    keepMeasuredHeight();
 
     try {
       const url = new URL(iframe.src);
